@@ -11,6 +11,25 @@
     "type": "git",
     "url": "https://github.com/JMBargueno/rainbogger.git"
   },
+  "keywords": [
+    "color",
+    "colour",
+    "colors",
+    "terminal",
+    "console",
+    "string",
+    "str",
+    "style",
+    "styles",
+    "tty",
+    "rgb",
+    "shell",
+    "xterm",
+    "log",
+    "logging",
+    "command-line",
+    "text"
+  ],
   "author": "jmbargueno",
   "license": "MIT",
   "bugs": {
