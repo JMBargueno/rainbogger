@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");
-const dir = path.join(__dirname, "./logs");
+const dir = path.join(__dirname, "../../logs");
 const nHistory = 5;
 
 if (!fs.existsSync(dir)) {
