@@ -1,7 +1,4 @@
-export default Rainbogger;
-declare namespace Rainbogger {
-    function info(msg: any): void;
-    function error(msg: any): void;
-    function debug(msg: any): void;
-    function request(msg: any): void;
-}
+export function info(msg: any): void;
+export function error(msg: any): void;
+export function debug(msg: any): void;
+export function request(msg: any): void;
