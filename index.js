@@ -94,12 +94,15 @@ function customParseDate(date) {
 }
 
 function getDateOfLog(file) {
-  const rawDate = file
+  const rawDateArray = file
     .split("#")[1]
-    .split(".")[0]
     .replace("_", " ")
     .replace("h", ":")
-    .replace("m", ":");
+    .replace("m", ":")
+    .split(".");
+
+  const rawDate = `${rawDateArray[0]}.${rawDateArray[1]}`.slice(0, -1);
+
   return Date.parse(rawDate);
 }
 
@@ -115,4 +118,8 @@ function searchOldestAndDelete(dir, files) {
   });
 }
 
-module.exports = Rainbogger;
+if (process.argv[3] == "--dev") {
+  module.exports = { Rainbogger, customParseDate, getDateOfLog };
+} else {
+  module.exports = Rainbogger;
+}
