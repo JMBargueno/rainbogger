@@ -118,8 +118,4 @@ function searchOldestAndDelete(dir, files) {
   });
 }
 
-if (process.argv[3] == "--dev") {
-  module.exports = { Rainbogger, customParseDate, getDateOfLog };
-} else {
-  module.exports = Rainbogger;
-}
+module.exports = Rainbogger;
